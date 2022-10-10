@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>momentum-clone-2022</title>
+  </head>
+  <body>
+    <header>
+      <div id="link-wrapper">
+        <button>
+          Links <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+        </button>
+        <form
+          id="link-form"
+          action="https://www.google.com/search"
+          method="get"
+        >
+          <input name="q" type="text" class="hidden" />
+        </form>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <div id="clock-wrapper">
+        <h2 id="clock">00:00:00</h2>
+      </div>
+      <div id="login-wrapper">
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+        </form>
+        <h1 id="login-text" class="hidden"></h1>
+      </div>
+      <div id="todo-wrapper">
+        <form id="todo-form">
+          <h2>What is your main focus for today?</h2>
+          <input type="text" placeholder="" />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+    <footer>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/click.js"></script>
+    <script
+      src="https://kit.fontawesome.com/493cc16663.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

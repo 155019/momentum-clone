@@ -1,0 +1,57 @@
+@import "reset.css";
+@import "main.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn 0.5s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+/*input*/
+input {
+  padding: 0 5px 5px 5px;
+  text-align: center;
+  border: 0;
+  background: 0;
+  color: inherit;
+  border-bottom: 2px solid white;
+}
+input::placeholder {
+  opacity: 0.5;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+  background: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  padding: 0;
+}

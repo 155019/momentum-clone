@@ -1,0 +1,119 @@
+/*animation*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*header*/
+header {
+  width: 100%;
+}
+
+#link-wrapper {
+  display: flex;
+  position: absolute;
+  top: 25px;
+}
+#link-wrapper button {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+#link-form input {
+  margin-left: 5px;
+  text-align: start;
+  font-size: 15px;
+  animation: fadeIn 0.3s linear;
+}
+
+#weather {
+  position: absolute;
+  right: 25px;
+}
+#weather span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  animation: fadeIn 0.5s linear;
+}
+#weather span:last-child {
+  font-size: 15px;
+}
+
+/*main*/
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock-wrapper {
+  margin-bottom: 10px;
+}
+#clock {
+  font-size: 135px;
+  font-weight: 600;
+}
+
+#login-wrapper {
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+#login-wrapper h1 {
+  animation: fadeIn 0.5s linear;
+}
+#login-form input {
+  font-size: 45px;
+}
+#login-form input::placeholder {
+  color: white;
+}
+
+#todo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#todo-form h2 {
+  font-size: 25px;
+}
+#todo-form input {
+  margin: 10px 0;
+  font-size: 25px;
+}
+#todo-list {
+  width: 15vw;
+}
+#todo-list li {
+  line-height: 150%;
+  display: flex;
+  justify-content: space-between;
+  animation: fadeIn 0.5s linear;
+}
+#todo-list button {
+  color: white;
+  opacity: 0.5;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#quote {
+  margin: 0 auto;
+}
